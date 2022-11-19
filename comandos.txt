@@ -1,0 +1,7 @@
+
+Exclui todas imagens containers volumes não utilizado
+docker system prune
+
+Exclui todas images container volumes 
+docker system prune -a 
+
