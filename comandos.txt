@@ -6,4 +6,9 @@ Exclui todas images container volumes
 docker system prune -a 
 
 Exclui todos volumes não utilizado 
+
 docker volume prune
+
+Exclui todas redes  não utilizado 
+
+docker network prune
