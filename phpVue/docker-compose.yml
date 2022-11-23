@@ -7,6 +7,8 @@ services:
       - "8000:80"
     volumes:
       - ./src:/var/www/html
+      - ./backend/config/jit.ini:/usr/local/etc/php/conf.d/jit.ini
+      - ./backend/config/timezone.ini:/usr/local/etc/php/conf.d/timezone.ini
     
   db:
     image: mysql:8.0
@@ -16,8 +18,4 @@ services:
       MYSQL_ROOT_PASSWORD: secret
     volumes:
       - "./db:/var/lib/mysql"
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - 8080:8080
+  
