@@ -20,12 +20,10 @@ switch ($service) {
         echo  json_encode($product->route());
         break;
         // Y
-    case 'y':
+    case 'teste':
+        echo   'server ok';
         break;
-        // Z
-    case 'z':
-        break;
-        // 404 
+   
     default:
         LogsW::write('Service Not Found');
         header("HTTP/1.1 404 Not Found");
