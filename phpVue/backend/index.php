@@ -8,7 +8,7 @@ $dotenv->load();
 
 $uri = explode("/", $_SERVER['REQUEST_URI']);
 $method = $_SERVER['REQUEST_METHOD'];
-$service = $uri[3];
+$service = $uri[1];
 $data = json_decode(file_get_contents("php://input"));
 $data = json_encode($data);
 LogsW::write("input: ".$data);
@@ -27,6 +27,6 @@ switch ($service) {
     default:
         LogsW::write('Service Not Found');
         header("HTTP/1.1 404 Not Found");
-        echo json_encode("Service Not Found");
+        echo json_encode("Service Not Found@@@");
         die();
 }

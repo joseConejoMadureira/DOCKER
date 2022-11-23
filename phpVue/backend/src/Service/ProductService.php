@@ -23,8 +23,8 @@ class ProductService  implements Iservice
   }
   function action()
   {
-    LogsW::write('productService action: ' . $this->uri[4]);
-    return  $this->uri[4];
+    LogsW::write('productService action: ' . $this->uri[2]);
+    return  $this->uri[2];
   }
   function read()
   {
@@ -34,7 +34,7 @@ class ProductService  implements Iservice
   function readById()
   {
     
-    return  $this->daoProduct->readById($this->uri[5]);
+    return  $this->daoProduct->readById($this->uri[3]);
   }
   function create()
   {
@@ -59,7 +59,7 @@ class ProductService  implements Iservice
   function delete()
   {
     
-    return  $this->daoProduct->delete($this->uri[5]);
+    return  $this->daoProduct->delete($this->uri[3]);
   }
 
   function  route()
