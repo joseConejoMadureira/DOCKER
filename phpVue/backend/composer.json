@@ -1,0 +1,38 @@
+{
+    "name": "dev/backend",
+    "description": "template php vuejs",
+    "autoload": {
+        "classmap": [
+            "src/Model",
+            "src/Service",
+            "src/php-log",
+            "src/Dao"
+        ],
+        "psr-4": {
+            "backend\\": "src/"
+        },
+        "files": [
+            "src/header/header.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "jose antonio conejo madureira",
+            "email": "jose.empregos@outlook.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5",
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@env",
+            "@autoload"
+        ],
+        "env": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "autoload":["composer dump-autoload"]
+    }
+}
