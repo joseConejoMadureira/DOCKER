@@ -9,7 +9,8 @@ $dotenv->load();
 
 $uri = explode("/", $_SERVER['REQUEST_URI']);
 $method = $_SERVER['REQUEST_METHOD'];
-$service = $uri[1];
+$service = $uri[2];
+
 $data = json_decode(file_get_contents("php://input"));
 $data = json_encode($data);
 LogsW::write("input: ".$data);
