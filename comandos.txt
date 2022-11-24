@@ -10,3 +10,6 @@ docker volume prune
 
 Exclui todas redes  não utilizado 
 docker network prune
+
+Acessar bash container 
+docker exec -it <id> /bin/bash
