@@ -512,3 +512,301 @@
  ### data log ---> 23/11/22 22:36:54  >>>>> : "GET"  >>>>> #
  ### data log ---> 23/11/22 22:36:54  >>>>> : /teste  >>>>> #
  ### data log ---> 23/11/22 22:36:54  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : Host: localhost:8000  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : Cache-Control: max-age=0  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : /  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 22:52:28  >>>>> : Service Not Found  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : Host: localhost:8000  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : Cache-Control: max-age=0  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : /  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 22:52:49  >>>>> : Service Not Found  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : Host: localhost:8000  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : Cache-Control: max-age=0  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : /  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 22:53:10  >>>>> : Service Not Found  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : Host: localhost:8000  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : Cache-Control: max-age=0  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : /  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 22:53:19  >>>>> : Service Not Found  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : Host: localhost:8000  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : Cache-Control: max-age=0  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : /  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 22:53:25  >>>>> : Service Not Found  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : Host: localhost:8000  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : Cache-Control: max-age=0  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : /  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 23:02:34  >>>>> : Service Not Found  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : Host: localhost:8000  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : Cache-Control: max-age=0  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : /  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 23:02:49  >>>>> : Service Not Found  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Host: localhost:8000  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Cache-Control: max-age=0  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : /  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Service Not Found  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Host: localhost:8000  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Cache-Control: max-age=0  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : /  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Service Not Found  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Host: localhost:8000  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Cache-Control: max-age=0  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : /  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 23:02:50  >>>>> : Service Not Found  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : Host: localhost:8000  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : Cache-Control: max-age=0  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : /  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 23:02:55  >>>>> : Service Not Found  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : Host: localhost:8000  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : Cache-Control: max-age=0  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : /  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 23:03:11  >>>>> : Service Not Found  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : Host: localhost:8000  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : Cache-Control: max-age=0  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : /  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 23:03:16  >>>>> : Service Not Found  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : Host: localhost:8001  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : /  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 23:05:38  >>>>> : Service Not Found  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : Host: localhost:8000  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : Connection: keep-alive  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : sec-ch-ua: "Microsoft Edge";v="107", "Chromium";v="107", "Not=A?Brand";v="24"  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : sec-ch-ua-mobile: ?0  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : sec-ch-ua-platform: "Linux"  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : Upgrade-Insecure-Requests: 1  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.56  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : Sec-Fetch-Site: none  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : Sec-Fetch-Mode: navigate  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : Sec-Fetch-User: ?1  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : Sec-Fetch-Dest: document  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : Accept-Encoding: gzip, deflate, br  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : Cookie: adminer_version=4.8.1  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : "GET"  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : /src/index.php  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : input: null  >>>>> #
+ ### data log ---> 23/11/22 23:25:41  >>>>> : Service Not Found  >>>>> #

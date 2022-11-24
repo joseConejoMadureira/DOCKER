@@ -6,7 +6,7 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - ./backend/src:/var/www/html
+      - ./backend/:/var/www/html
       - ./backend/config/jit.ini:/usr/local/etc/php/conf.d/jit.ini
       - ./backend/config/timezone.ini:/usr/local/etc/php/conf.d/timezone.ini
     

@@ -1,7 +1,7 @@
 <?php
-$dir = __DIR__ . './../';
-require_once   $dir . 'vendor/autoload.php';
 
+$dir =   '../';
+require_once   $dir . 'vendor/autoload.php';
 use src\Service\ProductService;
 
 $dotenv = Dotenv\Dotenv::createMutable($dir);
