@@ -1,15 +1,5 @@
 version: "3.1"
-services:
-  php-apache:
-    container_name: php8-apache
-    build: ./backend
-    ports:
-      - "8000:80"
-    volumes:
-      - ./backend/:/var/www/html
-      - ./backend/config/jit.ini:/usr/local/etc/php/conf.d/jit.ini
-      - ./backend/config/timezone.ini:/usr/local/etc/php/conf.d/timezone.ini
-    
+services:  
   db:
     image: mysql:8.0
     command: --default-authentication-plugin=mysql_native_password
@@ -22,6 +12,17 @@ services:
       - db:/var/lib/mysql
     networks:
       - db-network
+  php-apache:
+    depends_on: 
+    - db
+    container_name: php8-apache
+    build: ./backend
+    ports:
+      - "8000:80"
+    volumes:
+      - ./backend/:/var/www/html
+      - ./backend/config/jit.ini:/usr/local/etc/php/conf.d/jit.ini
+      - ./backend/config/timezone.ini:/usr/local/etc/php/conf.d/timezone.ini    
 networks:
   db-network:
     driver: bridge
