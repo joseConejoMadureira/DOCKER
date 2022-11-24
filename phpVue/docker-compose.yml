@@ -1,17 +1,16 @@
 version: "3.1"
 services:  
   db:
-    image: mysql:8.0
-    command: --default-authentication-plugin=mysql_native_password
+    build: ./mysql/
     restart: always
-    environment:
-       - MYSQL_ROOT_PASSWORD=teste
+    env_file:
+      - ./config/db.env
     ports:
-      - '3306:3306'
-    volumes:
-      - db:/var/lib/mysql
+      - "3307:3307"
     networks:
-      - db-network
+      - dockercompose
+    volumes:
+      - ./mysql/schema.sql:/docker-entrypoint-initdb.d/init.sql
   php-apache:
     depends_on: 
     - db
@@ -24,13 +23,7 @@ services:
       - ./backend/config/jit.ini:/usr/local/etc/php/conf.d/jit.ini
       - ./backend/config/timezone.ini:/usr/local/etc/php/conf.d/timezone.ini    
 networks:
-  db-network:
-    driver: bridge
-volumes:
-  db:
-    driver: local
-
-      
+  dockercompose:    
   
   
   
