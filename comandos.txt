@@ -19,4 +19,11 @@ One liner to stop / remove all of Docker containers:
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)    
 
+Create the docker group
+
+sudo groupadd docker
+
+Add your user to the docker group
+sudo usermod -aG docker $USER
+
 mysql -uroot -p
