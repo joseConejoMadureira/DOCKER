@@ -1,26 +1,27 @@
-version: '3.4'
+version: '3.3'
+
 services:
-  db:
-    image: mysql:5.7.22
-    command: mysqld --default_authentication_plugin=mysql_native_password
-    environment:
-      TZ: America/Sao_Paulo
-      MYSQL_ROOT_PASSWORD: docker
-      MYSQL_USER: docker
-      MYSQL_PASSWORD: docker
-      MYSQL_DATABASE: wordpress
-    ports:
-      - 3308:3306
-  wordpress:
-    image: wordpress:latest
+  db: # Container de MySQL
+    image: mysql:5.7 # FROM mysql:5.7
     volumes:
-      - ./config/php.conf.uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
-      - ./wp-app:/var/www/html
+      - db_data:/var/lib/mysql
+    restart: always
     environment:
-      TZ: America/Sao_Paulo
-      WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_NAME: wordpress
-      WORDPRESS_DB_USER: root
-      WORDPRESS_DB_PASSWORD: docker
-    ports:
-      - 80:80
+      MYSQL_ROOT_PASSWORD: wordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: matheus
+      MYSQL_PASSWORD: secret
+  php-apache:
+      depends_on: 
+        - db
+      container_name: php8-apache
+      build: ./backend
+      ports:
+        - "8000:80"
+      volumes:
+        - ./backend/:/var/www/html
+        - ./backend/config/jit.ini:/usr/local/etc/php/conf.d/jit.ini
+        - ./backend/config/timezone.ini:/usr/local/etc/php/conf.d/timezone.ini
+volumes:
+  db_data: {}
+
