@@ -1,7 +1,7 @@
 FROM php:8.0.1-apache-buster
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y \
-        libzip-dev \
+        -dev \
         zip \
   && docker-php-ext-install zip
 RUN docker-php-ext-install pdo pdo_mysql bcmath opcache 
