@@ -13,3 +13,4 @@ docker network prune
 
 Acessar bash container 
 docker exec -it <id> /bin/bash
+
