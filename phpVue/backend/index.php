@@ -1,10 +1,10 @@
 <?php
 
-$dir =   '../';
-require_once   $dir . 'vendor/autoload.php';
+require_once __DIR__ . "/vendor/autoload.php";
+
 use src\Service\ProductService;
 
-$dotenv = Dotenv\Dotenv::createMutable($dir);
+$dotenv = Dotenv\Dotenv::createMutable(__DIR__);
 $dotenv->load();
 
 $uri = explode("/", $_SERVER['REQUEST_URI']);
