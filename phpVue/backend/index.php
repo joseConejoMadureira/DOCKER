@@ -29,6 +29,6 @@ switch ($service) {
     default:
         LogsW::write('Service Not Found');
         header("HTTP/1.1 404 Not Found");
-        echo json_encode("Service Not Found@@@");
+        echo json_encode("Service Not Found");
         die();
 }
