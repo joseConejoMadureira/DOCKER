@@ -22,6 +22,5 @@ services:
         - ./backend/:/var/www/html
         - ./backend/config/jit.ini:/usr/local/etc/php/conf.d/jit.ini
         - ./backend/config/timezone.ini:/usr/local/etc/php/conf.d/timezone.ini
-volumes:
-  db_data: {}
+
 
