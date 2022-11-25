@@ -13,12 +13,11 @@ services:
       - ./backend/config/jit.ini:/usr/local/etc/php/conf.d/jit.ini
       - ./backend/config/timezone.ini:/usr/local/etc/php/conf.d/timezone.ini   
   db:
-    image: mysql-img
+    image: mysql:5.7 
     container_name: mysql
-    build: ./mysql/
     restart: always
-    env_file:
-      - ./config/db.env
+    environment:
+      MYSQL_ROOT_PASSWORD: teste
     ports:
       - "3306:3306"
     volumes:
