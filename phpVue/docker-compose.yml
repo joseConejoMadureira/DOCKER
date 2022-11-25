@@ -1,9 +1,10 @@
 version: "3.1"
 services:  
   php-apache:
+    image: php-backend-img
+    container_name: php-backend
     depends_on:
     - db
-    container_name: php8-apache
     build: ./backend
     ports:
       - "8000:80"
@@ -12,6 +13,8 @@ services:
       - ./backend/config/jit.ini:/usr/local/etc/php/conf.d/jit.ini
       - ./backend/config/timezone.ini:/usr/local/etc/php/conf.d/timezone.ini   
   db:
+    image: mysql-img
+    container_name: mysql
     build: ./mysql/
     restart: always
     env_file:
