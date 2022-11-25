@@ -9,22 +9,13 @@ $user = 'root';
 
 //database user password
 $pass = 'teste';
-$a = 'FLASKDOCKER';
-
+$database = 'FLASKDOCKER';
 // check the MySQL connection status
-$conn = new mysqli($host, $user, $pass,$a);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} else {
-    echo "Connected to MySQL server successfully!";
-}
+$conn = new mysqli($host, $user, $pass,$database);
 
-$sql = "INSERT INTO USERS (name) values ('test3')";
+$sql = "INSERT INTO USERS (name) values ('cmd')";
 
-if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
+$conn->query($sql);
+
 
 ?>

@@ -1,17 +1,6 @@
 version: "3.1"
 services:  
-  db:
-    build: ./mysql/
-    restart: always
-    env_file:
-      - ./config/db.env
-    ports:
-      - "3306:3306"
-    volumes:
-      - ./mysql/schema.sql:/docker-entrypoint-initdb.d/init.sql
   php-apache:
-    links:
-    - db
     depends_on:
     - db
     container_name: php8-apache
@@ -21,7 +10,17 @@ services:
     volumes:
       - ./backend/:/var/www/html
       - ./backend/config/jit.ini:/usr/local/etc/php/conf.d/jit.ini
-      - ./backend/config/timezone.ini:/usr/local/etc/php/conf.d/timezone.ini    
+      - ./backend/config/timezone.ini:/usr/local/etc/php/conf.d/timezone.ini   
+  db:
+    build: ./mysql/
+    restart: always
+    env_file:
+      - ./config/db.env
+    ports:
+      - "3306:3306"
+    volumes:
+      - "./mysql/schema.sql:/docker-entrypoint-initdb.d/1.sql"
+      - "./mysql/insert.sql:/docker-entrypoint-initdb.d/2.sql"
   
   
   
