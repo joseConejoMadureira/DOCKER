@@ -2,6 +2,9 @@ version: "3.1"
 services:  
 
   frontend:
+    depends_on:
+    - php-apache
+    
     image: frontend
     container_name: frontend
     build: ./frontend
