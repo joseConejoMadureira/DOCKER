@@ -17,7 +17,7 @@ services:
     container_name: mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: teste
+      MYSQL_ROOT_PASSWORD: test
     ports:
       - "3306:3306"
     volumes:
