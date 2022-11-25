@@ -1,5 +1,16 @@
 version: "3.1"
 services:  
+
+  frontend:
+    image: frontend
+    container_name: frontend
+    build: ./frontend
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: ['yarn','serve']
   php-apache:
     image: php-backend-img
     container_name: php-backend
@@ -7,7 +18,7 @@ services:
     - db
     build: ./backend
     ports:
-      - "8000:80"
+      - "8001:81"
     volumes:
       - ./backend/:/var/www/html
       - ./backend/config/jit.ini:/usr/local/etc/php/conf.d/jit.ini
@@ -24,5 +35,6 @@ services:
       - "./mysql/schema.sql:/docker-entrypoint-initdb.d/1.sql"
       - "./mysql/insert.sql:/docker-entrypoint-initdb.d/2.sql"
   
+     
   
   
