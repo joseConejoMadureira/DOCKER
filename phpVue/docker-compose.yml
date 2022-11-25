@@ -10,7 +10,6 @@ services:
     volumes:
       - .:/app
     working_dir: /app
-    command: ['yarn','serve']
   php-apache:
     image: php-backend-img
     container_name: php-backend
