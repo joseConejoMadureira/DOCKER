@@ -6,13 +6,13 @@ services:
     env_file:
       - ./config/db.env
     ports:
-      - "3307:3307"
-    networks:
-      - dockercompose
+      - "3306:3306"
     volumes:
       - ./mysql/schema.sql:/docker-entrypoint-initdb.d/init.sql
   php-apache:
-    depends_on: 
+    links:
+    - db
+    depends_on:
     - db
     container_name: php8-apache
     build: ./backend
@@ -22,8 +22,6 @@ services:
       - ./backend/:/var/www/html
       - ./backend/config/jit.ini:/usr/local/etc/php/conf.d/jit.ini
       - ./backend/config/timezone.ini:/usr/local/etc/php/conf.d/timezone.ini    
-networks:
-  dockercompose:    
   
   
   

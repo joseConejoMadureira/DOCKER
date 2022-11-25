@@ -8,4 +8,3 @@ CREATE TABLE `FLASKDOCKER`.`USERS` (
   PRIMARY KEY (ID)
 );
 
-INSERT INTO users (name) values ('test2');
