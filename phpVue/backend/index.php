@@ -12,4 +12,19 @@ header('Access-Control-Allow-Credentials: true');
 $dotenv = Dotenv\Dotenv::createMutable(__DIR__);
 $dotenv->load();
 
-echo 'ok';
+$host = $_ENV['DB_HOST'];
+$user = $_ENV['DB_USERNAME'];
+$pass = $_ENV['DB_PASSWORD'];
+$database = $_ENV['DB_DATABASE'];
+
+$conn = new mysqli($host, $user, $pass, $database);
+
+
+$sql = "SELECT * FROM USERS";
+$result = $conn->query($sql);
+echo json_encode($result->fetch_all());
+
+
+$conn->close();
+
+?>
