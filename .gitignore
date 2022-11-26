@@ -33,6 +33,7 @@ Thumbs.db
 
 
 phpVue/backend/vendor
+phpVue/backend/composer.lock
 phpVue/backend/config/database.php
 phpVue/backend/src/config/database.php
 phpVue/backend/logs.log
