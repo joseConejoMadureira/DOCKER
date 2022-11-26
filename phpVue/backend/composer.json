@@ -15,12 +15,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "@env",
+            
             "@autoload"
         ],
-        "env": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ],
+        
         "autoload":["composer dump-autoload"]
     }
 }
