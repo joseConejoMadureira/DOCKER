@@ -1,12 +1,19 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-
-# Compiled output
+phpVue/frontend/.DS_Store
+phpVue/frontend/node_modules
 phpVue/frontend/dist
 
-# Node
-phpVue/frontend/node_modules
-phpVue/frontend/npm-debug.log
-phpVue/frontend/yarn-error.log
+
+# local env files
+phpVue/frontend/.env.local
+phpVue/frontend/.env.*.local
+
+# Log files
+phpVue/frontend/npm-debug.log*
+phpVue/frontend/yarn-debug.log*
+phpVue/frontend/yarn-error.log*
+phpVue/frontend/pnpm-debug.log*
+
+
 
 # IDEs and editors
 .idea/
