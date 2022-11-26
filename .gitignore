@@ -37,7 +37,6 @@ phpVue/backend/composer.lock
 phpVue/backend/config/database.php
 phpVue/backend/src/config/database.php
 phpVue/backend/logs.log
-phpVue/backend/.env
 phpVue/backend/test/.phpunit.result.cache
 phpVue/db
 .vscode/settings.json
