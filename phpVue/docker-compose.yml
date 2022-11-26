@@ -11,7 +11,7 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - ./frontend:/app
+      - ./frontend:/frontend
       
     
   php-apache:
