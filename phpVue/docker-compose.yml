@@ -11,7 +11,8 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - .:/app
+      - ./frontend:/app
+      
     
   php-apache:
     image: php-backend-img
