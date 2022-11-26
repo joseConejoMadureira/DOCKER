@@ -1,15 +1,8 @@
 {
     "name": "dev/backend",
     "description": "template php vuejs",
-    "autoload": {
-       
-        "psr-4": {
-            "backend\\": "src/"
-        },
-        "files": [
-            "src/header/header.php"
-        ]
-    },
+    
+    
     "authors": [
         {
             "name": "jose antonio conejo madureira",
