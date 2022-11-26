@@ -2,7 +2,7 @@ version: "3.1"
 services:  
 
   frontend:
-    depends_on:
+    links:
     - php-apache
     
     image: frontend
@@ -12,7 +12,7 @@ services:
       - "8000:80"
     volumes:
       - .:/app
-    working_dir: /app
+    
   php-apache:
     image: php-backend-img
     container_name: php-backend
