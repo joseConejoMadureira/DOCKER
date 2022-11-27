@@ -20,7 +20,7 @@ $database = $_ENV['DB_DATABASE'];
 $conn = new mysqli($host, $user, $pass, $database);
 
 
-$sql = "SELECT * FROM USERS";
+$sql = "SELECT * FROM TEST";
 $result = $conn->query($sql);
 echo json_encode($result->fetch_all());
 
