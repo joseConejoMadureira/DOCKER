@@ -8,6 +8,6 @@ class TestController extends Controller
 {
     public function index()
     {
-        return response()->json('oi');
+        return response()->json('oi',200);
     }
 }
