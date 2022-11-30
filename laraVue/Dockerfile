@@ -4,7 +4,7 @@ RUN mkdir -p /app/public
 COPY package.json vite.config.js package-lock.json /app/
 COPY resources/ /app/resources/
 WORKDIR /app
-RUN npm install && npm run prod
+RUN npm install && npm run build
 
 #Server Dependencies
 FROM composer:2.0.8 as vendor
@@ -23,14 +23,13 @@ RUN composer install \
 FROM php:8.0.1-apache-buster as base
 #install php dependencies
 RUN apt-get update && apt-get install -y \
-    build-essential \
+    
     libpng-dev \
     libonig-dev \
     libjpeg62-turbo-dev \
     libfreetype6-dev \
     locales \
     libzip-dev \
-    zip \
     jpegoptim optipng pngquant gifsicle \
     unzip \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -50,7 +49,7 @@ COPY . /var/www/html
 COPY --from=vendor /app/vendor/ /var/www/html/vendor/
 COPY --from=vuejs /app/public/js/ /var/www/html/public/js/
 COPY --from=vuejs /app/public/css/ /var/www/html/public/css/
-COPY --from=vuejs /app/mix-manifest.json /var/www/html/mix-manifest.json
+COPY --from=vuejs /app/manifest.json /var/www/html/manifest.json
 
 RUN pwd && ls -la
 
