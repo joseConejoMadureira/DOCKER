@@ -23,7 +23,7 @@ RUN composer install \
 FROM php:8.0.1-apache-buster as base
 #install php dependencies
 RUN apt-get update && apt-get install -y \
-    
+
     libpng-dev \
     libonig-dev \
     libjpeg62-turbo-dev \
@@ -35,7 +35,7 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl
-
+RUN docker-php-ext-install zip
 # change the document root to /var/www/html/public
 RUN sed -i -e "s/html/html\/public/g" \
     /etc/apache2/sites-enabled/000-default.conf
