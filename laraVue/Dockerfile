@@ -47,13 +47,12 @@ WORKDIR /var/www/html
 
 COPY . /var/www/html
 COPY --from=vendor /app/vendor/ /var/www/html/vendor/
-COPY --from=vuejs /app/public/js/ /var/www/html/public/js/
-COPY --from=vuejs /app/public/css/ /var/www/html/public/css/
-COPY --from=vuejs /app/manifest.json /var/www/html/manifest.json
+COPY --from=vuejs /app/public/build/assets/ /var/www/html/public/build/js/
+COPY --from=vuejs /app/public/build/manifest.json /var/www/html/manifest.json
 
 RUN pwd && ls -la
 
-RUN php artisan key:generate --ansi && php artisan storage:link && php artisan config:cache && php artisan route:cache
+#RUN php artisan key:generate --ansi && php artisan storage:link && php artisan config:cache && php artisan route:cache
 
 
 # these directories need to be writable by Apache
