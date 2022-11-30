@@ -20,7 +20,7 @@ RUN composer install \
     --prefer-dist
 
 #Final Image
-FROM php:7.4-apache as base
+FROM php:8.0.1-apache-buster as base
 #install php dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
