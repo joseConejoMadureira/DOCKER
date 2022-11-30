@@ -1,7 +1,7 @@
 FROM node:14.15.0 as vuejs
 LABEL authors="Nimat Razmjo"
 RUN mkdir -p /app/public
-COPY package.json webpack.mix.js package-lock.json /app/
+COPY package.json vite.config.js package-lock.json /app/
 COPY resources/ /app/resources/
 WORKDIR /app
 RUN npm install && npm run prod
