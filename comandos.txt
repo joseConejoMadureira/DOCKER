@@ -29,3 +29,4 @@ sudo usermod -aG docker $USER
 mysql -uroot -p
 
 docker-compose up --build
+test
