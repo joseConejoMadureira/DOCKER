@@ -23,7 +23,7 @@ services:
     environment:
         MYSQL_ROOT_PASSWORD: test
     ports:
-    - "3314:3306"
+    - "3306:3306"
     volumes:
     - "./mysql/schema.sql:/docker-entrypoint-initdb.d/1.sql"
     - "./mysql/insert.sql:/docker-entrypoint-initdb.d/2.sql"

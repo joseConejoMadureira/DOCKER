@@ -36,14 +36,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl
 RUN docker-php-ext-install zip
-# change the document root to /var/www/html/public
-RUN sed -i -e "s/html/html\/public/g" \
-    /etc/apache2/sites-enabled/000-default.conf
 
-# enable apache mod_rewrite
-RUN a2enmod rewrite
 
-WORKDIR /var/www/html
 
 COPY . /var/www/html
 COPY --from=vendor /app/vendor/ /var/www/html/vendor/
@@ -55,17 +49,32 @@ RUN pwd && ls -la
 #RUN php artisan key:generate --ansi && php artisan storage:link && php artisan config:cache && php artisan route:cache
 
 
-# these directories need to be writable by Apache
-RUN chown -R www-data:www-data /var/www/html/storage \
-    /var/www/html/bootstrap/cache
+#apache 
+# Add the user UID:1000, GID:1000, home at /app
+RUN groupadd -r app -g 1000 && useradd -u 1000 -r -g app -m -d /app -s /sbin/nologin -c "App user" app && \
+    chmod 755 /var/www/html
 
-# copy env file for our Docker image
-# COPY env.docker /var/www/html/.env
 
-# create sqlite db structure
-RUN mkdir -p storage/app \
-    && touch storage/app/db.sqlite
+#upload
+RUN echo "file_uploads = On\n" \
+         "memory_limit = 500M\n" \
+         "upload_max_filesize = 500M\n" \
+         "post_max_size = 500M\n" \
+         "max_execution_time = 600\n" \
+         > /usr/local/etc/php/conf.d/uploads.ini
+
+USER app
+
+WORKDIR /var/www/html
+
+USER root
+
+COPY default.conf /etc/apache2/sites-enabled/000-default.conf
+
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+
 
 VOLUME ["/var/www/html/storage", "/var/www/html/bootstrap/cache"]
+
 
 EXPOSE 80
