@@ -1,10 +1,11 @@
-FROM node:lts-alpine as vuejs
+#Client App
+FROM node:14.15.0 as vuejs
 LABEL authors="Nimat Razmjo"
 RUN mkdir -p /app/public
-COPY package.json vite.config.js package-lock.json /app/
+COPY package.json webpack.mix.js package-lock.json /app/
 COPY resources/ /app/resources/
 WORKDIR /app
-RUN npm install && npm run build
+RUN npm install && npm run prod
 
 #Server Dependencies
 FROM composer:2.0.8 as vendor
@@ -37,44 +38,37 @@ RUN apt-get update && apt-get install -y \
 RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl
 RUN docker-php-ext-install zip
 
+# change the document root to /var/www/html/public
+RUN sed -i -e "s/html/html\/public/g" \
+    /etc/apache2/sites-enabled/000-default.conf
 
-
-COPY . /var/www/html
-COPY --from=vendor /app/vendor/ /var/www/html/vendor/
-COPY --from=vuejs /app/public/build/assets/ /var/www/html/public/build/js/
-COPY --from=vuejs /app/public/build/manifest.json /var/www/html/manifest.json
-
-RUN pwd && ls -la
-
-#RUN php artisan key:generate --ansi && php artisan storage:link && php artisan config:cache && php artisan route:cache
-
-
-#apache 
-# Add the user UID:1000, GID:1000, home at /app
-RUN groupadd -r app -g 1000 && useradd -u 1000 -r -g app -m -d /app -s /sbin/nologin -c "App user" app && \
-    chmod 755 /var/www/html
-
-
-#upload
-RUN echo "file_uploads = On\n" \
-         "memory_limit = 500M\n" \
-         "upload_max_filesize = 500M\n" \
-         "post_max_size = 500M\n" \
-         "max_execution_time = 600\n" \
-         > /usr/local/etc/php/conf.d/uploads.ini
-
-USER app
+# enable apache mod_rewrite
+RUN a2enmod rewrite
 
 WORKDIR /var/www/html
 
-USER root
+COPY . /var/www/html
+COPY --from=vendor /app/vendor/ /var/www/html/vendor/
+COPY --from=vuejs /app/public/js/ /var/www/html/public/js/
+COPY --from=vuejs /app/public/css/ /var/www/html/public/css/
+COPY --from=vuejs /app/mix-manifest.json /var/www/html/mix-manifest.json
 
-COPY default.conf /etc/apache2/sites-enabled/000-default.conf
+RUN pwd && ls -la
 
-CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+RUN php artisan key:generate --ansi && php artisan storage:link && php artisan config:cache && php artisan route:cache
 
+
+# these directories need to be writable by Apache
+RUN chown -R www-data:www-data /var/www/html/storage \
+    /var/www/html/bootstrap/cache
+
+# copy env file for our Docker image
+# COPY env.docker /var/www/html/.env
+
+# create sqlite db structure
+RUN mkdir -p storage/app \
+    && touch storage/app/db.sqlite
 
 VOLUME ["/var/www/html/storage", "/var/www/html/bootstrap/cache"]
-
 
 EXPOSE 80
