@@ -30,3 +30,11 @@ mysql -uroot -p
 
 docker-compose up --build
 test
+
+docker-compose build app
+
+docker-compose exec app ls -l
+
+docker-compose exec app rm -rf vendor composer.lock
+docker-compose exec app composer install
+docker-compose exec app php artisan key:generate
