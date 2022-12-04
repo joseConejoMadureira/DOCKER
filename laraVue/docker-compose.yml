@@ -1,37 +1,16 @@
-version: "3.8"
+version: '3'
 services:
-  server:
-    build:
-      context: .
-      dockerfile: Dockerfile.prod
-      target: base
-    container_name: server
-    env_file:
-      - ./.env
-    depends_on:
-      - mysql
-    links:
-      - mysql
-    ports:
-      - 80:80
-    networks:
-      - back-tier
-  mysql:
-    image: mysql:5.7
-    container_name: mysql
+  web:
     restart: always
-    environment:
-        MYSQL_ROOT_PASSWORD: test
-    ports:
-    - "3306:3306"
+    build: .
     volumes:
-    - "./mysql/schema.sql:/docker-entrypoint-initdb.d/1.sql"
-    - "./mysql/insert.sql:/docker-entrypoint-initdb.d/2.sql"
-
-    networks:
-        - back-tier
-
-volumes:
-  mysql_data:
-networks:
-  back-tier:
+      - ./:/var/www/
+  nginx:
+    build: ./docker/nginx
+    restart: always
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/var/www
+    depends_on:
+      - web

@@ -19,9 +19,10 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 COPY . /var/www
 
-RUN chown -R www-data:www-data \
-        /var/www/storage \
-        /var/www/bootstrap/cache
+RUN chown -R www-data:www-data /var/www
+RUN usermod -u 1000 www-data
+USER www-data
+
 
 EXPOSE 9000
 
