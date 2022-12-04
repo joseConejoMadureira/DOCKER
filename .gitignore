@@ -1,8 +1,3 @@
-laraVue/node_modules
-laraVue/public/build
-laraVue/public/hot
-laraVue/public/storage
-lara/storage/*.key
 lara/vendor
 lara/.env
 lara/.env.backup
