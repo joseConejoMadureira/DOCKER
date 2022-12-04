@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    restart: always
+    build: .
+    volumes:
+      - ./:/var/www/
+  nginx:
+    build: ./docker/nginx
+    restart: always
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/var/www
+    depends_on:
+      - web
