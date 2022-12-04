@@ -1,3 +1,8 @@
+laraVue/node_modules
+lara/public/build
+lara/public/hot
+lara/public/storage
+lara/storage/*.key
 lara/vendor
 lara/.env
 lara/.env.backup
@@ -11,8 +16,9 @@ lara/yarn-error.log
 lara/.fleet
 lara/.idea
 lara/.vscode
-
-
+lara/.npm
+lara/composer.lock
+lara/package-lock.json
 
 laraVue/node_modules
 laraVue/public/build
@@ -32,6 +38,9 @@ laraVue/yarn-error.log
 laraVue/.fleet
 laraVue/.idea
 laraVue/.vscode
+laraVue/.npm
+laraVue/composer.lock
+laraVue/package-lock.json
 
 phpVue/frontend/.DS_Store
 phpVue/frontend/node_modules
