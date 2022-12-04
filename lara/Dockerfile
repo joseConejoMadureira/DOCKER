@@ -1,9 +1,13 @@
-FROM php:8.1-fpm-alpine
+FROM php:8.1-fpm
 
-RUN docker-php-ext-install intl
-RUN docker-php-ext-install pcntl
-RUN docker-php-ext-install pdo_mysql
-RUN docker-php-ext-install mbstring
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    libpng-dev \
+    libonig-dev \
+    libxml2-dev \
+    zip \
+    unzip
 
 WORKDIR /var/www
 
