@@ -1,24 +1,3 @@
-laraVue/node_modules
-lara/public/build
-lara/public/hot
-lara/public/storage
-lara/storage/*.key
-lara/vendor
-lara/.env
-lara/.env.backup
-lara/.env.production
-lara/.phpunit.result.cache
-lara/Homestead.json
-lara/Homestead.yaml
-lara/auth.json
-lara/npm-debug.log
-lara/yarn-error.log
-lara/.fleet
-lara/.idea
-lara/.vscode
-lara/.npm
-lara/composer.lock
-lara/package-lock.json
 
 laraVue/node_modules
 laraVue/public/build
