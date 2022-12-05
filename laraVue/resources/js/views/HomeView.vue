@@ -1,15 +1,20 @@
 <template>
-
+     <span>{{ info }}</span>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import axios from "axios";
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
+  data() {
+    return {
+      info: null,
+    };
+  },
+  mounted() {
+    axios
+      .get("http://localhost:8000/api/test")
+      .then((response) => (this.info = response));
+  },
+};
 </script>
