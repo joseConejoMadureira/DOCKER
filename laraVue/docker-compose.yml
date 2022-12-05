@@ -2,6 +2,8 @@ version: '3'
 services:
   web:
     restart: always
+    depends_on:
+    - db
     build: .
     volumes:
       - ./:/var/www/
@@ -14,3 +16,11 @@ services:
       - ./:/var/www
     depends_on:
       - web
+  db:
+    image: mysql:5.7
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: test
+    ports:
+      - "3306:3306"
