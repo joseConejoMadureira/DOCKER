@@ -69,3 +69,4 @@ phpVue/backend/logs.log
 phpVue/backend/test/.phpunit.result.cache
 phpVue/db
 .vscode/settings.json
+laraVue/.bash_history
