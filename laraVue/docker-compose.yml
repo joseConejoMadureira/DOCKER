@@ -2,11 +2,11 @@ version: '3'
 services:
   web:
     restart: always
-    depends_on:
-    - db
     build: .
     volumes:
       - ./:/var/www/
+    networks:
+      - app
   nginx:
     image: nginx:alpine
     restart: always
@@ -16,6 +16,8 @@ services:
       - ./:/var/www
     depends_on:
       - web
+    networks:
+      - app
   db:
     image: mysql:5.7
     container_name: mysql
@@ -26,5 +28,10 @@ services:
       - "3306:3306"
     volumes:
         - "./mysql/schema.sql:/docker-entrypoint-initdb.d/1.sql"
+    networks:
+      - app
+networks:
+  app:
+    driver: bridge
 
 
