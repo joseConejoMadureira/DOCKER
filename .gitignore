@@ -5,7 +5,6 @@ laraVue/public/hot
 laraVue/public/storage
 laraVue/storage/*.key
 laraVue/vendor
-laraVue/.env
 laraVue/.env.backup
 laraVue/.env.production
 laraVue/.phpunit.result.cache
