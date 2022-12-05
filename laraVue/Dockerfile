@@ -30,5 +30,4 @@ EXPOSE 9000
 
 ENTRYPOINT [ "php-fpm" ]
 
-RUN npm install
-RUN npm run build
+CMD [ "npm","run" ,"build" ]
