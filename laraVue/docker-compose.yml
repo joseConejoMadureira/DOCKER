@@ -1,25 +1,27 @@
-version: '3'
+version: '3.7'
 services:
-  web:
-    restart: always
-    container_name: web
-    build: .
-    volumes:
-      - ./:/var/www/
-    networks:
-      - app
   nginx:
-    image: nginx:alpine
+    build: ./nginx
     container_name: nginx
     restart: always
+
     ports:
       - "8000:80"
     volumes:
       - ./:/var/www
-    depends_on:
-      - web
     networks:
       - app
+  web:
+    restart: always
+    container_name: web
+    build: .
+    depends_on:
+      - nginx
+    volumes:
+      - ./:/var/www/
+    networks:
+      - app
+
   db:
     image: mysql:5.7
     container_name: db
