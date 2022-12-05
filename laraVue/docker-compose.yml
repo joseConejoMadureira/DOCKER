@@ -25,5 +25,5 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - "./mysql/schema.sql:/docker-entrypoint-initdb.d/1.sql"
+      - ./mysql/schema.sql:/docker-entrypoint-initdb.d
 
