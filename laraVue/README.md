@@ -1,5 +1,4 @@
 em desenvolvimento
-docker-compose build
 docker-compose  up -d
 docker-compose exec web composer install
 docker-compose exec web php artisan migrate
