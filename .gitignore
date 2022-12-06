@@ -72,3 +72,4 @@ phpVue/db
 laraVue/.bash_history
 laraVue/.composer/.htaccess
 .gitignore
+laraVue/.composer
