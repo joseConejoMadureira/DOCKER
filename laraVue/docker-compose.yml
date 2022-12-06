@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   nginx:
-    build: ./nginx
+    build: ./docker/nginx
     container_name: nginx
     restart: always
     ports:
@@ -30,7 +30,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-        - "./mysql/schema.sql:/docker-entrypoint-initdb.d/1.sql"
+        - "./docker/mysql/schema.sql:/docker-entrypoint-initdb.d/1.sql"
     networks:
       - app
 networks:
