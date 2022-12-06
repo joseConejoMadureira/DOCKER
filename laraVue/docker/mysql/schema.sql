@@ -3,7 +3,7 @@ CREATE DATABASE laravel;
 USE laravel;
 
 CREATE TABLE `laravel`.`log` (
-  	`ID` bigint NOT NULL AUTO_INCREMENT,
-  	`DESCRIPTION` varchar(100) DEFAULT NULL,
-  	PRIMARY KEY (`ID`)
+  	`id` bigint NOT NULL AUTO_INCREMENT,
+  	`description` varchar(100) DEFAULT NULL,
+  	PRIMARY KEY (`id`)
 	);

@@ -3,11 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class TestController extends Controller
 {
     public function index()
     {
-        return response()->json('oi',200);
+        $log = DB::select('SELECT  * FROM  log');
+
+
+        return response()->json($log, 200);
     }
 }
