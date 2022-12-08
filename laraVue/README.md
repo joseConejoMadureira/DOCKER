@@ -21,16 +21,16 @@ cd  laraVue
 ```
 docker-compose up
 ```
-### instalçao das dependencias php 
+### instalação das dependencias php 
 ```
 docker-compose exec web composer install
 ```
-### instalçao das migrates 
+### instalação das migrates 
 ```
 docker-compose exec web php artisan migrate
 ```
 
-### instalçao das dependencias vuejs (frontend) 
+### instalação das dependencias vuejs (frontend) 
 ```
 docker-compose exec web npm install
 ```
