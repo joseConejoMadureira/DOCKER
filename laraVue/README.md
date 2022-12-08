@@ -4,6 +4,19 @@ laravel
 vuejs 
 mysql 
 
+### clone do repostorio em questão 
+```
+git clone https://github.com/joseConejoMadureira/DOCKER.git
+```
+### diretorio  do projeto
+```
+cd  DOCKER
+```
+### diretorio  do projeto laravue
+```
+cd  laraVue
+```
+
 ### cria e inicia os containers 
 ```
 docker-compose up
