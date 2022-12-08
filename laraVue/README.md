@@ -4,7 +4,7 @@ laravel
 vuejs 
 mysql 
 
-### clone do repostorio em questão 
+### clone do repostorio do projeto DOCKER 
 ```
 git clone https://github.com/joseConejoMadureira/DOCKER.git
 ```
