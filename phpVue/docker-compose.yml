@@ -5,7 +5,6 @@ services:
     links:
     - php-apache
     
-    image: frontend
     container_name: frontend
     build: ./frontend
     ports:
@@ -15,7 +14,6 @@ services:
       
     
   php-apache:
-    image: php-backend-img
     container_name: php-backend
     depends_on:
     - db
