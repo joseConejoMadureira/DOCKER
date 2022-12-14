@@ -134,4 +134,3 @@ docker-compose stop
 docker-compose down
 ```
 
-##  comandos docker 
