@@ -69,11 +69,14 @@ sudo usermod -aG docker $USER
 sudo usermod -aG docker $USER
 ```
 
-### Exclui todas imagens containers volumes não utilizado
+### Exclui todas  containers  não utilizado
 ```
 docker system prune
 ```
-
+## Exclui todas imagens containers volumes não utilizado
+```
+docker system prune -a
+```
 ### Exclui todos volumes não utilizado
 ```
 docker volume prune
