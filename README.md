@@ -1,4 +1,4 @@
-# docker xxxx (em desenvolvimento)
+# docker 
 docker xxxx
 
 ##  comandos docker 
@@ -60,6 +60,38 @@ docke start  <container>
 docke stop <container>
 ```
 
+### Cria o grupo docker
+```
+sudo usermod -aG docker $USER
+```
+### Adicione seu usuário ao grupo docker
+```
+sudo usermod -aG docker $USER
+```
+
+### Exclui todas imagens containers volumes não utilizado
+```
+docker system prune
+```
+
+### Exclui todos volumes não utilizado
+```
+docker volume prune
+```
+
+### Exclui todas redes  não utilizado 
+```
+docker network prune
+```
+### pausa todos os container
+```
+docker stop $(docker ps -a -q)
+```
+### exclui todos os containers 
+```
+docker rm $(docker ps -a -q)    
+```
+
 ##  comandos docker-compose
 
 ### cria e inicia os containers 
@@ -101,3 +133,5 @@ docker-compose stop
 ```
 docker-compose down
 ```
+
+##  comandos docker 
