@@ -6,25 +6,59 @@ docker xxxx
 ```
 docker run <image>
 ```
-### cria um container com uma image
+### baixar image no docker images
 ```
-docker run <image>
+docker pull <image>
 ```
-### cria um container com uma image
+### criar uma nova camada de container
 ```
-docker run <image>
-```
-
-### cria um container com uma image
-```
-docker run <image>
+docker create
 ```
 
-### cria um container com uma image
+### listar container criados 
 ```
-docker run <image>
+docker ps
 ```
 
+### executar um comando dentro de um container que já esta em execução 
+```
+Docker exec
+```
+### gerenciar todas as imagens do container 
+```
+docker images 
+```
+
+### cria uma image através de arquivo chamado Dockerfile
+```
+docker build 
+```
+### informações do contoneir em execucação (cpu,mem, etc)
+```
+docker stats <container>
+```
+### detalhes da image ou container 
+```
+Docker inspect <image ou container>
+```
+### deletar imagem
+```
+Docker rmi <image>
+```
+
+### entrar dentro do container_image pastas e arquivos
+```
+docker attach <container_image>
+```
+### iniciar um container
+```
+docke start  <container>
+```
+
+### pausar um container
+```
+docke stop <container>
+```
 
 ##  comandos docker-compose
 
@@ -33,22 +67,37 @@ docker run <image>
 docker-compose up
 ```
 
-### cria e inicia os containers 
+### realiza apenas a etapa de build das imagens que serão utilizadas
 ```
-docker-compose up
-```
-
-### cria e inicia os containers 
-```
-docker-compose up
+docker-compose build
 ```
 
-### cria e inicia os containers 
+### visualiza os logs do container 
 ```
-docker-compose up
+docker-compose logs
 ```
 
-### cria e inicia os containers 
+### reinicia os containers 
 ```
-docker-compose up
+docker-compose restart 
+```
+
+### permite aumentar o número de réplicas de um contêiner
+```
+docker-compose scale
+```
+
+### inicia os contêineres
+```
+docker-compose start
+```
+
+### paralisa os contêineres
+```
+docker-compose stop
+```
+
+### paralisa e remove todos os contêineres e seus componentes como rede, imagem e volume
+```
+docker-compose down
 ```
