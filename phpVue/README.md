@@ -1,6 +1,6 @@
 # docker 
 estrutura em docker que Contempla container 
-laravel 
+php 
 vuejs 
 mysql 
 
@@ -14,7 +14,7 @@ cd  DOCKER
 ```
 ### diretorio  do projeto laravue
 ```
-cd  laraVue
+cd  phpVue
 ```
 
 ### cria e inicia os containers 
@@ -24,18 +24,4 @@ docker-compose up
 ### instalação das dependencias php 
 ```
 docker-compose exec web composer install
-```
-### instalação das migrates 
-```
-docker-compose exec web php artisan migrate
-```
-
-### instalação das dependencias vuejs (frontend) 
-```
-docker-compose exec web npm install
-```
-
-### build do frontend(vuejs) 
-```
-docker-compose exec web npm run build
 ```
