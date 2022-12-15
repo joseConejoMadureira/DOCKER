@@ -23,5 +23,5 @@ docker-compose up
 ```
 ### instalação das dependencias php 
 ```
-docker-compose exec php-backend composer install
+docker exec php-apache  composer install
 ```
