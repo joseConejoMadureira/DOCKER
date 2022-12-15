@@ -22,7 +22,7 @@ docker ps
 
 ### executar um comando dentro de um container que já esta em execução 
 ```
-Docker exec
+docker exec
 ```
 ### gerenciar todas as imagens do container 
 ```
