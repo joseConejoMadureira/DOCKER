@@ -1,5 +1,5 @@
 # docker 
-docker xxxx
+
 
 ##  comandos docker 
 ### cria um container com uma image
