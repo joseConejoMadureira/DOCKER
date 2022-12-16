@@ -19,7 +19,7 @@ cd  phpVue
 
 ### cria e inicia os containers 
 ```
-docker-compose up
+docker-compose up -d
 ```
 ### instalação das dependencias php 
 ```

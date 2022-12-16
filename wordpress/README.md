@@ -18,5 +18,5 @@ cd  wordpress
 
 ### cria e inicia os containers 
 ```
-docker-compose up
+docker-compose up -d
 ```

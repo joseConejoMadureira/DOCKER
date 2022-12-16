@@ -17,7 +17,6 @@ laraVue/.fleet
 laraVue/.idea
 laraVue/.vscode
 laraVue/.npm
-laraVue/composer.lock
 laraVue/package-lock.json
 
 phpVue/frontend/.DS_Store
@@ -62,7 +61,6 @@ Thumbs.db
 
 
 phpVue/backend/vendor
-phpVue/backend/composer.lock
 phpVue/backend/config/database.php
 phpVue/backend/src/config/database.php
 phpVue/backend/logs.log
