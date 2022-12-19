@@ -9,7 +9,8 @@ class TestController extends Controller
 {
     public function index()
     {
-        $log = DB::select('SELECT  * FROM  log');
+        $log = DB::select('SELECT  * FROM  log_tests');
+
 
 
         return response()->json($log, 200);

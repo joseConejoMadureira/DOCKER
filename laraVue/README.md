@@ -29,7 +29,10 @@ docker-compose exec web composer install
 ```
 docker-compose exec web php artisan migrate
 ```
-
+### instalação das migrates 
+```
+php artisan db:seed
+```
 ### instalação das dependencias vuejs (frontend) 
 ```
 docker-compose exec web npm install
